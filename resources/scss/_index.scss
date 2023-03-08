@@ -1,14 +1,14 @@
 button.btnblue,
 a.btnblue {
     color: white;
-    background-color: #000154;
+    background-image: url("{{asset('storage/'.$project->cover_image)}}");
     padding: 1em;
     text-decoration: none;
     border-radius: .5em;
     display: inline-block;
 
     &:hover {
-        background-color: #000277;
+        background-image: url("{{asset('storage/'.$project->cover_image)}}");
     }
 }
 

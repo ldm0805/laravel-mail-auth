@@ -23,7 +23,9 @@
                     <label class="control-label mb-2">
                         Copertina
                     </label>
-                    <img class="w-25" src="{{asset('storage/'.$project->cover_image)}}" alt="{{$project->title}}">
+                    <div class="img-up">
+                        <img class="img-up" src="{{asset('storage/'.$project->cover_image)}}" alt="{{$project->title}}">
+                    </div>
                 </div>
                 <input type="file" class="form-control @error('cover_image') is-invalid @enderror" id="cover_image" name="cover_image">
                 @error('cover_image')
