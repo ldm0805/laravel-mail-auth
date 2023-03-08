@@ -1,4 +1,5 @@
 @extends('layouts.admin')
+@inject('utils', 'App\Utils\Utils')
 @section('content')
 <div class="container edit">
     <div class="row">
@@ -23,9 +24,7 @@
                     <label class="control-label mb-2">
                         Copertina
                     </label>
-                    <div class="img-up">
-                        <img class="img-up" src="{{asset('storage/'.$project->cover_image)}}" alt="{{$project->title}}">
-                    </div>
+                    {!! $utils->displayImage($project->cover_image, $project->title) !!}
                 </div>
                 <input type="file" class="form-control @error('cover_image') is-invalid @enderror" id="cover_image" name="cover_image">
                 @error('cover_image')

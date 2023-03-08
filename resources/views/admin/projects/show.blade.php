@@ -1,4 +1,5 @@
 @extends('layouts.admin')
+@inject('utils', 'App\Utils\Utils')
 @section('content')
     <div class="show">
         <div class="row">
@@ -13,9 +14,7 @@
                 </div>
             </div>
             <div class="col-12">
-                <div class="img-up">
-                    <img src="{{asset('storage/'.$project->cover_image)}}" alt="{{$project->title}}">
-                </div>
+                {!! $utils->displayImage($project->cover_image, $project->title) !!}
                 <p>
                     <strong>
                         Slug:
