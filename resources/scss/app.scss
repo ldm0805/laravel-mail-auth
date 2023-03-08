@@ -33,3 +33,11 @@ div#app {
 td {
     color: white !important;
 }
+
+div.img-up {
+    img {
+        height: 200px;
+        width: 200px;
+        object-fit: contain;
+    }
+}
