@@ -14,7 +14,9 @@
                 </div>
             </div>
             <div class="col-12">
-                {!! $utils->displayImage($project->cover_image, $project->title) !!}
+                <div class="my-3">
+                    {!! $utils->displayImage($project->cover_image, $project->title) !!}
+                </div>
                 <p>
                     <strong>
                         Slug:

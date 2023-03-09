@@ -10,6 +10,7 @@ Inizializzazione progetto
 - npm i
 - npm run dev
 
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 Upload file:
 
 - andare nel file config/filesystems.php 
@@ -122,7 +123,7 @@ composer require guzzlehttp/guzzle
 
 - per l'invio del testo usiamo mailtrap.io, i dati da modificare nel .env li troviamo su mailtrap.io :
 email testing->inboxes->selezioniamo laravel 7+
-cambiare nel file .env (31)
+cambiare nel file .env (riga 31)
 MAIL_MAILER=smtp
 MAIL_HOST=sandbox.smtp.mailtrap.io
 MAIL_PORT=2525
@@ -251,7 +252,7 @@ Mail::to('info@boolpress.com')->send(new NewContact($new_lead));
 
 
 
-
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 
 
 
